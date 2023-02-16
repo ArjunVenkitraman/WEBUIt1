@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <style>
+        div {
+            background-color: rgb(1, 8, 7);
+            color: rgb(230, 47, 47);
+            margin: 30px ;
+            padding: 30px;
+            border: dotted rgb(210, 70, 70);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .body {
+            background: linear-gradient(to right, #f5af19, #f12711);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        #full{
+            text-align: center;
+             background: linear-gradient(to right, #f5af19, #f12711);
+        }
+        legend{
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    
+    <h1 style="text-align: center;">Registration Form</h1>
+    <div>
+        <fieldset>
+            <legend>Registration form</legend><br>
+            <form action="https://www.youtube.com/">
+                <label>First name</label>
+                <input type="textbox"><br><br>
+                <label>Last name</label>
+                <input type="textbox"><br><br>
+                <label>Email</label>
+                <input type="email"><br><br>
+                <label>Password</label>
+                <input type="password"><br><br>
+                <label>Remember password</label>
+                <input type="checkbox"><br><br>
+                <label>
+                    <select name="" id="">
+                        <optgroup label="UG ">
+                            <option value="BCA">BCA</option>
+                            <option value="Bsc CS">Bsc CS</option>
+                            <option value="Bsc IT">Bsc IT</option>
+                            <option value="B.tech">B.tech</option>
+                        </optgroup>
+                        <optgroup label="PG">
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                        </optgroup>
+
+                    </select>
+                </label><br><br>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" id="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="gender">
+                <label for="female">Female</label><br><br>
+                <label>ADDERSS</label><br>
+                <textarea rows="4" cols="20"></textarea><br><br>
+                <label>Date and time of birth</label>
+                <input type="datetime-local"><br><br>
+                <label>Mobile Number</label>
+                <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10 digits"><br><br>
+                <label>Telephone number</label>
+                <input type="tel" pattern="[0-9]{4}-[0-9]{7}" required><br><br>
+                <input type="submit" value="SUBMIT">
+
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
