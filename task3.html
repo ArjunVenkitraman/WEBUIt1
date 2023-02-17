@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edupord</title>
+    <link rel="icon" href="assets/education.png">
     <style>
         div.container {
             width: 100%;
+            height: 100%;
             border: none;
             background-color: #84ceeb;
             height: 2000px;
         }
-
-        header {}
 
         header img {
             float: left;
@@ -53,6 +53,17 @@
             padding: 10px;
         }
 
+        img {
+            opacity: 60%;
+
+        }
+
+        img:hover {
+            opacity: 100%;
+            width: 300px;
+            height: 260px;
+        }
+
         #school {
             padding-left: 50px;
             display: inline;
@@ -76,6 +87,23 @@
             text-decoration: none;
         }
 
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        a:active {
+            color: black;
+        }
+
         #slogan {
             display: inline;
             font-size: 30px;
@@ -88,35 +116,85 @@
             height: 420px;
         }
 
-        .second {
-            display: inline;
-          
 
-
-        }
-        article{
-            width:55%;
+        article {
             display: inline;
-            
         }
+
         #about {
             background-color: #146180;
             color: aliceblue;
             padding: 10px;
-            height: 150px;
             text-align: center;
+        }
+
+        #video {
+            height: 300 px;
+            width: 400px;
+            float: right;
+        }
+
+        .lang {
+            border: solid red;
+            display: inline;
+            margin-left: 140px;
+            padding: 100px;
+            background-color: pink;
+            padding-left: 200px;
+            padding-right: 200px;
+            border-radius: 50px;
+
 
         }
-        aside{
-            width:30%;
-            float: right;
+
+        body {
+            background-color: #84ceeb;
+        }
+
+        #program {
+            border: solid black;
+            padding-bottom: 150px;
+            background-color: #5AB9EA;
+        }
+
+        #cont {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #contact {
             display: inline;
+        }
+
+        footer p {
+            display: inline;
+            padding-left: 300px;
+            padding-top: 100px;
+        }
+
+        #foot {
+            background-color: rgb(20, 64, 73);
+            color: gold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #foot1 {
+            display: inline-block;
+            padding-left: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #foot2 {
+            display: inline-block;
+            padding-left: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="conta">
+
         <div class="headbg">
             <header>
                 <h1 id="heading">EDUPORD</h1>
@@ -133,23 +211,23 @@
         <nav>
             <h1 style="font-size: 40px;">Explore Here</h1>
             <ul>
-                <li><a href="">Class 1</a></li>
-                <li><a href="">Class 2</a></li>
-                <li><a href="">Class 3</a></li>
-                <li><a href="">Class 4</a></li>
-                <li><a href="">Class 5</a></li>
-                <li><a href="">Class 6</a></li>
-                <li><a href="">Class 7</a></li>
-                <li><a href="">Class 8</a></li>
-                <li><a href="">Class 9</a></li>
-                <li><a href="">Class 10</a></li>
-                <li><a href="">Class 11</a></li>
-                <li><a href="">Class 12</a></li>
-                <li><a href="">Class UG</a></li>
-                <li><a href="">Class PG</a></li>
-                <li><a href="">School</a></li>
-                <li><a href="">Board</a></li>
-                <li><a href="">staff</a></li>
+                <li><a href="#Class 1">Class 1</a></li>
+                <li><a href="#Class 2">Class 2</a></li>
+                <li><a href="#Class 3">Class 3</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#program">Syllabus</a></li>
+                <li><a href="#Class 2">Some videos</a></li>
+                <li><a href="#footer">Our Motto</a></li>
+                <li><a href="#footer">Contact Details</a></li>
+                <li><a href="#Class 1">Class </a></li>
+                <li><a href="#Class 2">Class 2</a></li>
+                <li><a href="#Class 3">Class 3</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#program">Syllabus</a></li>
+                <li><a href="#Class 2">Some videos</a></li>
+                <li><a href="#footer">Our Motto</a></li>
+                <li><a href="#footer">Contact Details</a></li>
+                <li><a href="#heading">HOME</a></li>
             </ul>
         </nav>
         <div class="first">
@@ -160,7 +238,7 @@
                are given shapes "</pre>
         </div>
         <div id="about">
-            <p>About<br>
+            <p style="font-size: 30px;">About<br>
                 You can use this website for
             <ul>
                 <li>payment</li>
@@ -170,160 +248,201 @@
             </p>
         </div>
 
-        <div class="second">
-            <article>
-                <p id="Class 1">
-                    <img style="float: left;" src="assets/ele.png" alt="elephant" width="200px" height="200px">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution
-                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                    Many
-                    desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                    and a
-                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <p id="Class 2">
-                    <img style="float: right;" src="assets/cutie.png" alt="class 2" width="200px" height="200px">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
+        <article>
+            <iframe id="video" src="https://www.youtube.com/embed/ZtE-DjGzSUg"
+                title="Twinkle Twinkle Little Star Song with Woof and Joy // Nursery Rhymes for Kids // Songs for Kids"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p id="Class 1">
+                <img style="float: left;" src="assets/ele.png" alt="elephant" width="200px" height="200px">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution
-                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                    Many
-                    desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                    and a
-                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <p id="Class 3">
-                    <img src="assets/rabbit.png" style="float: left;" width="200px" height="200px">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <iframe id="video" src="https://www.youtube.com/embed/tWe93wO0VmE"
+                title="Clap Your Hands with Lyrics || Popular English Nursery Rhymes for Kids" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p id="Class 2">
+                <img style="float: right;" src="assets/cutie.png" alt="class 2" width="200px" height="200px">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution
-                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                    Many
-                    desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                    and a
-                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                </p>
-            </article>
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <iframe id="video" src="https://www.youtube.com/embed/Zu6o23Pu0Do"
+                title="Rain, Rain, Go Away Nursery Rhyme With Lyrics - Cartoon Animation Rhymes &amp; Songs for Children"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p id="Class 3">
+                <img src="assets/rabbit.png" style="float: left;" width="200px" height="200px">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page
+                when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </article>
+
+        <div id="program">
+            <p style="text-align: center;font-size: 50px;">Programming languages we teach</p>
+            <br><br><br><br><br><br><br>
+            <h1 class="lang">JAVA</h1>
+            <h1 class="lang" style="background-color: purple;">PHP</h1>
         </div>
-        <aside>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/FOEtbqbwS50"
-                title="#Vaathi - Official Trailer | Dhanush | Samyuktha | GV Prakash Kumar | Venky Atluri"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-                <iframe width="200" height="200" src="https://www.youtube.com/embed/FOEtbqbwS50"
-                title="#Vaathi - Official Trailer | Dhanush | Samyuktha | GV Prakash Kumar | Venky Atluri"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </aside>
+        <div style="text-align: center;">
+            <label id="cont" style="display: inline;">Contact Details</label>
+        </div><br>
+        <h1 style="display: inline;padding-left: 150px;"> Email ID : ramxxxxxx@gmail.com</h1><br>
+        <h1 style="display: inline;padding-left: 150px;">Ph:No - 8281xxxxxxx</h1><br>
+        <h3 style="display:inline-block;margin-left: 150px;">A/14 Adhikesavapuram,<br>Kodunthirapully
+            Village,<br>Palakkad-678004</h3>
+
 
     </div>
+
+
+    <hr>
+    <footer id="foot">
+        <pre id="foot1"><br>
+            <h1>OUR INSTITUTIONS</h1>
+EDUPORD GROUPS
+EDUPORD COLLEGE OF ARTS AND SCIENCE        
+EDUPORD COLLEGE OF EDUCATION
+EDUPORD COLLEGE OF TECHNOLOGY
+EDUPORD COLLEGE OF ENGINEERING
+EDUPORD COLLEGE OF PHARMACY AND HEALTH SCIENCES
+EDUPORD COLLEGE OF ALLIED HEALTH SCIENCES
+EDUPORD COLLEGE OF PHYSIOTHERAPY
+EDUPORD COLLEGE OF NURSING
+EDUPORD B-SPINE - AN EXPERIENTIAL B SCHOOL
+       </pre>
+        <pre id="foot2">
+       <h1>DIFFERENTIATORS</h1> 
+Design Thinking in Education
+Differentiators
+5 Pillars of SNS
+SNS Spine
+Clubs and Activities
+      </pre>
+    </footer>
 </body>
 
 </html>
