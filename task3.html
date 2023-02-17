@@ -8,14 +8,7 @@
     <title>Edupord</title>
     <link rel="icon" href="assets/education.png">
     <style>
-        div.container {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background-color: #84ceeb;
-            height: 2000px;
-        }
-
+       
         header img {
             float: left;
             padding-left: 80px;
@@ -53,12 +46,12 @@
             padding: 10px;
         }
 
-        img {
+        .opa {
             opacity: 60%;
 
         }
 
-        img:hover {
+        .opa:hover {
             opacity: 100%;
             width: 300px;
             height: 260px;
@@ -67,13 +60,13 @@
         #school {
             padding-left: 50px;
             display: inline;
-            
+
         }
 
         nav {
             float: left;
             background-color: #5AB9EA;
-            height: 1500px;
+            height: 1800px;
             padding: 10px;
             width: 15%;
         }
@@ -105,29 +98,38 @@
         }
 
         #slogan {
-            display: inline;
+            padding-top: 80px;
+          padding-right: 70px;
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding-left: 10px;
-            padding-top: 40px;
+           text-shadow: 5px 5px 1px #d15656 ;
         }
-
-        .first {
-            height: 420px;
-        }
-
-
         article {
             display: inline;
         }
-
         #about {
             background-color: #146180;
             color: aliceblue;
             padding: 10px;
             text-align: center;
         }
-
+        #about ul li{
+            text-decoration: none;
+        }
+        /* #school{
+            -webkit-box-reflect: right;
+        } */
+        #hand{
+            height: 200px;
+            width: 180px;
+            -webkit-box-reflect: right;
+        }
+        #handg{
+            height: 200px;
+            width: 180px;
+            -webkit-box-reflect: left;
+            margin-left: 300px;
+        }
         #video {
             height: 300 px;
             width: 400px;
@@ -143,8 +145,6 @@
             padding-left: 200px;
             padding-right: 200px;
             border-radius: 50px;
-
-
         }
 
         body {
@@ -166,39 +166,35 @@
             display: inline;
         }
 
-        footer p {
-            display: inline;
-            padding-left: 300px;
-            padding-top: 100px;
-        }
-
-        #foot {
+        #foot{
+            text-align: left;
+            display: inline-block;
             background-color: rgb(20, 64, 73);
             color: gold;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 100%;
         }
-
         #foot1 {
             display: inline-block;
-            padding-left: 50px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            
         }
-
         #foot2 {
             display: inline-block;
-            padding-left: 50px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+        #logo{
+            display: inline-block;
         }
     </style>
 </head>
 
 <body>
-    <div class="conta">
+    
 
         <div class="headbg">
             <header>
                 <h1 id="heading">EDUPORD</h1>
-
                 <img src="assets/education.png" alt="Logo" width="100px" height="100px">
                 <ul class="head">
                     <li><a href="">Contact</a></li>
@@ -210,7 +206,7 @@
 
         <nav>
             <h1 style="font-size: 40px;">Explore Here</h1>
-            <ul>
+            <ul style="font-size: large;">
                 <li><a href="#Class 1">Class 1</a></li>
                 <li><a href="#Class 2">Class 2</a></li>
                 <li><a href="#Class 3">Class 3</a></li>
@@ -231,23 +227,25 @@
             </ul>
         </nav>
         <div class="first">
-            <img id="school" src="assets/school.png" alt="School">
-            <pre id="slogan">                       " Schools
-                  are the factory
-        where the minds of students 
-               are given shapes "</pre>
+            <img id="school" style="display: inline-block;" src="assets/school.png" alt="School">
+            <pre id="slogan" style="float: right;">                           " Schools
+                      are the factory
+          where the minds of students 
+                   are given shapes "</pre>
+                   
         </div>
         <div id="about">
             <p style="font-size: 30px;">About<br>
                 You can use this website for
-            <ul>
+            <ul style="list-style-type: none; font-size: 20px;">
                 <li>payment</li>
                 <li>syllabus</li>
                 <li>notes etc.</li>
             </ul>
             </p>
         </div>
-
+        <img id="hand" src="assets/handpng.png" alt="handshake">
+        <img id="handg" src="assets/handgirl.png" alt="girl">
 
         <article>
             <iframe id="video" src="https://www.youtube.com/embed/ZtE-DjGzSUg"
@@ -256,7 +254,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <p id="Class 1">
-                <img style="float: left;" src="assets/ele.png" alt="elephant" width="200px" height="200px">
+                <img class="opa" style="float: left;" src="assets/ele.png" alt="elephant" width="200px" height="200px">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                 and
@@ -305,7 +303,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <p id="Class 2">
-                <img style="float: right;" src="assets/cutie.png" alt="class 2" width="200px" height="200px">
+                <img class="opa" style="float: right;" src="assets/cutie.png" alt="class 2" width="200px" height="200px">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                 and
@@ -355,7 +353,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <p id="Class 3">
-                <img src="assets/rabbit.png" style="float: left;" width="200px" height="200px">
+                <img class="opa" src="assets/rabbit.png" style="float: left;" width="200px" height="200px">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                 and
@@ -408,40 +406,50 @@
             <h1 class="lang" style="background-color: purple;">PHP</h1>
         </div>
         <div style="text-align: center;">
-            <label id="cont" style="display: inline;">Contact Details</label>
+            <label id="cont">Contact Details</label>
         </div><br>
-        <h1 style="display: inline;padding-left: 150px;"> Email ID : ramxxxxxx@gmail.com</h1><br>
-        <h1 style="display: inline;padding-left: 150px;">Ph:No - 8281xxxxxxx</h1><br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7839.001157192674!2d76.59732782225846!3d10.77292020907374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba87229384c8645%3A0x2404ccf67d3cf9a1!2sKodunthirapully%2C%20Pirayiri%2C%20Kerala!5e0!3m2!1sen!2sin!4v1676606252329!5m2!1sen!2sin"
+            width="300" height="280" style="border:0;float: right;padding-right: 40px;padding-bottom: 20px;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1 style="display: inline-block;padding-left: 150px;"> Email ID : ramxxxxxx@gmail.com</h1><br>
+        <h1 style="display: inline-block;padding-left: 150px;">Ph:No - 8281xxxxxxx</h1><br>
         <h3 style="display:inline-block;margin-left: 150px;">A/14 Adhikesavapuram,<br>Kodunthirapully
             Village,<br>Palakkad-678004</h3>
 
 
-    </div>
-
-
     <hr>
     <footer id="foot">
-        <pre id="foot1"><br>
-            <h1>OUR INSTITUTIONS</h1>
-EDUPORD GROUPS
-EDUPORD COLLEGE OF ARTS AND SCIENCE        
-EDUPORD COLLEGE OF EDUCATION
-EDUPORD COLLEGE OF TECHNOLOGY
-EDUPORD COLLEGE OF ENGINEERING
-EDUPORD COLLEGE OF PHARMACY AND HEALTH SCIENCES
-EDUPORD COLLEGE OF ALLIED HEALTH SCIENCES
-EDUPORD COLLEGE OF PHYSIOTHERAPY
-EDUPORD COLLEGE OF NURSING
-EDUPORD B-SPINE - AN EXPERIENTIAL B SCHOOL
+        <pre id="foot1" style=" font-family: 'Noto Sans', sans-serif;">
+            <h1 style="padding-left: 50px;">OUR INSTITUTIONS</h1>
+            EDUPORD GROUPS
+            EDUPORD COLLEGE OF ARTS AND SCIENCE        
+            EDUPORD COLLEGE OF EDUCATION
+            EDUPORD COLLEGE OF TECHNOLOGY
+            EDUPORD COLLEGE OF ENGINEERING
+            EDUPORD COLLEGE OF PHARMACY AND HEALTH SCIENCES
+            EDUPORD COLLEGE OF ALLIED HEALTH SCIENCES
+            EDUPORD COLLEGE OF PHYSIOTHERAPY
+            EDUPORD COLLEGE OF NURSING
+            EDUPORD B-SPINE - AN EXPERIENTIAL B SCHOOL
        </pre>
         <pre id="foot2">
-       <h1>DIFFERENTIATORS</h1> 
-Design Thinking in Education
-Differentiators
-5 Pillars of SNS
-SNS Spine
-Clubs and Activities
-      </pre>
+            <h1>DIFFERENTIATORS</h1>
+            Design Thinking in Education
+            Differentiators
+            5 Pillars of SNS
+            SNS Spine
+            Clubs and Activities
+        </pre>
+        <pre id="logo">
+            Copyright Thinkific 2022
+            *Figure based on direct platform sales plus 
+            estimated course sales via off platform 
+            payments processors.
+            Listed in $USD.
+            
+        </pre>
+        <img src="assets/icons8-whatsapp-30-removebg-preview.png" alt="f">
     </footer>
 </body>
 
