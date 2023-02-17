@@ -11,6 +11,7 @@
             width: 100%;
             border: none;
             background-color: #84ceeb;
+            height: 2000px;
         }
 
         header {}
@@ -54,7 +55,8 @@
 
         #school {
             padding-left: 50px;
-            float: left;
+            display: inline;
+            
         }
 
         nav {
@@ -62,6 +64,7 @@
             background-color: #5AB9EA;
             height: 1500px;
             padding: 10px;
+            width: 15%;
         }
 
         nav ul {
@@ -75,7 +78,6 @@
 
         #slogan {
             display: inline;
-            float: left;
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding-left: 10px;
@@ -87,15 +89,29 @@
         }
 
         .second {
-           display: inline;
+            display: inline;
           
+
+
         }
-        #about{
+        article{
+            width:55%;
+            display: inline;
+            
+        }
+        #about {
             background-color: #146180;
             color: aliceblue;
             padding: 10px;
+            height: 150px;
+            text-align: center;
+
         }
-       
+        aside{
+            width:30%;
+            float: right;
+            display: inline;
+        }
     </style>
 </head>
 
@@ -105,7 +121,7 @@
             <header>
                 <h1 id="heading">EDUPORD</h1>
 
-                <img src="asset/education.png" alt="Logo" width="100px" height="100px">
+                <img src="assets/education.png" alt="Logo" width="100px" height="100px">
                 <ul class="head">
                     <li><a href="">Contact</a></li>
                     <li><a href="">Sign up/Profile/Login/logout</a></li>
@@ -137,7 +153,7 @@
             </ul>
         </nav>
         <div class="first">
-            <img id="school" src="asset/school.png" alt="School">
+            <img id="school" src="assets/school.png" alt="School">
             <pre id="slogan">                       " Schools
                   are the factory
         where the minds of students 
@@ -145,19 +161,19 @@
         </div>
         <div id="about">
             <p>About<br>
-            You can use this website for 
+                You can use this website for
             <ul>
                 <li>payment</li>
                 <li>syllabus</li>
                 <li>notes etc.</li>
             </ul>
-        </p>
+            </p>
         </div>
-        
+
         <div class="second">
             <article>
                 <p id="Class 1">
-                    <img style="float: left;"src="asset/ele.png" alt="elephant" width="200px" height="200px">
+                    <img style="float: left;" src="assets/ele.png" alt="elephant" width="200px" height="200px">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
@@ -202,8 +218,8 @@
                     software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <p id="Class 2">
-                        <img style="float: right;"src="asset/cutie.png" alt="class 2" width="200px" height="200px">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    <img style="float: right;" src="assets/cutie.png" alt="class 2" width="200px" height="200px">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
                     scrambled it to make a type specimen book. It has survived not only five centuries, but also the
@@ -247,7 +263,7 @@
                     software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <p id="Class 3">
-                    <img src="asset/rabbit.png" style="float: left;" width="200px" height="200px">
+                    <img src="assets/rabbit.png" style="float: left;" width="200px" height="200px">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
@@ -294,6 +310,18 @@
                 </p>
             </article>
         </div>
+        <aside>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/FOEtbqbwS50"
+                title="#Vaathi - Official Trailer | Dhanush | Samyuktha | GV Prakash Kumar | Venky Atluri"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/FOEtbqbwS50"
+                title="#Vaathi - Official Trailer | Dhanush | Samyuktha | GV Prakash Kumar | Venky Atluri"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </aside>
 
     </div>
 </body>
