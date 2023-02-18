@@ -96,14 +96,16 @@
         a:active {
             color: black;
         }
+        
+        .side :hover ::before{
+            background-color: antiquewhite;
 
-        #slogan {
-            padding-top: 80px;
-          padding-right: 70px;
-            font-size: 30px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-           text-shadow: 5px 5px 1px #d15656 ;
         }
+        .side :hover::after{
+            background-color: #d15656;
+        }
+
+        
         article {
             display: inline;
         }
@@ -186,6 +188,40 @@
         #logo{
             display: inline-block;
         }
+        .imgcontainer{
+            position: relative;
+
+        }
+        .bleft{
+            position: absolute;
+            bottom: 80px;
+            left: 100px;
+        }
+        .over{
+            position: relative;
+            display: inline;
+        }
+        .text{
+            position: absolute;
+            left: 35px;
+            bottom: 200px;
+        }
+        #slogan {
+            padding-top: 80px;
+          padding-right: 70px;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           text-shadow: 5px 5px 1px #d15656 ;
+        }
+        #slogan:hover{
+            color: #d15656;
+            
+        }
+        #class{
+
+        }
+        
+        
     </style>
 </head>
 
@@ -225,15 +261,22 @@
                 <li><a href="#footer">Contact Details</a></li>
                 <li><a href="#heading">HOME</a></li>
             </ul>
-        </nav>
-        <div class="first">
-            <img id="school" style="display: inline-block;" src="assets/school.png" alt="School">
-            <pre id="slogan" style="float: right;">                           " Schools
-                      are the factory
-          where the minds of students 
-                   are given shapes "</pre>
-                   
+            <div class="side">
+            <p>12 Years of Excellence Building on decades of delivering quality Education</p>
+            </div>
+            </nav>
+        
+        <img src="assets/school.png" style="display: inline;" alt="school">
+        
+        <div class="over">
+         <img src="assets/stu3.webp" alt="school" style="width: 500px;height: 480px;margin-left: 100px;display: inline;" >
+         <div class="text"><pre id="slogan" style="float: right;text-align: center;">
+            "Schools
+            are the factory
+            where the minds of students 
+              are given shapes "</pre>
         </div>
+       </div>
         <div id="about">
             <p style="font-size: 30px;">About<br>
                 You can use this website for
@@ -451,6 +494,7 @@
         </pre>
         <img src="assets/icons8-whatsapp-30-removebg-preview.png" alt="f">
     </footer>
+
 </body>
 
 </html>
