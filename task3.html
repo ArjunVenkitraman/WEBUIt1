@@ -17,6 +17,7 @@
         .head {
             display: inline;
             float: right;
+            
 
 
         }
@@ -239,7 +240,7 @@
         }
 
         div.side {
-            position: -webkit-sticky;
+            /* position: -webkit-sticky; */
             position: sticky;
             top: 0;
             background-color: yellow;
@@ -266,6 +267,12 @@
 
         tr:nth-child(odd):hover {
             background-color: rgb(119, 123, 123);
+        }
+
+        .flogo {
+            float: right;
+            padding-right: 150px;
+
         }
     </style>
 </head>
@@ -332,7 +339,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sticky_element">
+                            <a href="https://www.w3schools.com/
+                            ">
                                 <input type="submit">
                             </a>
                         </td>
@@ -530,23 +538,21 @@
             <h1 class="lang" style="background-color: purple;">PHP</h1>
         </a>
     </div>
-    <div style="text-align: center;">
-        <label id="cont">Contact Details</label>
-    </div><br>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7839.001157192674!2d76.59732782225846!3d10.77292020907374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba87229384c8645%3A0x2404ccf67d3cf9a1!2sKodunthirapully%2C%20Pirayiri%2C%20Kerala!5e0!3m2!1sen!2sin!4v1676606252329!5m2!1sen!2sin"
-        width="300" height="280" style="border:0;float: right;padding-right: 40px;padding-bottom: 20px;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <h1 style="display: inline-block;padding-left: 150px;"> Email ID : ramxxxxxx@gmail.com</h1><br>
-    <h1 style="display: inline-block;padding-left: 150px;">Ph:No - 8281xxxxxxx</h1><br>
-    <h3 style="display:inline-block;margin-left: 150px;">A/14 Adhikesavapuram,<br>Kodunthirapully
-        Village,<br>Palakkad-678004</h3>
-
-
-    <hr>
+    <div>
+        <h2 id="cont" style="text-align: center;">Contact Details</h2>
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7839.001157192674!2d76.59732782225846!3d10.77292020907374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba87229384c8645%3A0x2404ccf67d3cf9a1!2sKodunthirapully%2C%20Pirayiri%2C%20Kerala!5e0!3m2!1sen!2sin!4v1676606252329!5m2!1sen!2sin"
+            width="250" height="200" style="border:0;float: right;padding-right: 70px;padding-bottom: 20px;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 style="display: inline-block;padding-left: 150px;"> Email ID : ramxxxxxx@gmail.com</h2><br>
+        <h2 style="display: inline-block;padding-left: 150px;">Ph:No - 8281xxxxxxx</h2><br>
+        <h3 style="display:inline-block;margin-left: 150px;">A/14 Adhikesavapuram,<br>Kodunthirapully
+            Village,<br>Palakkad-678004</h3>
+    </div>
     <footer id="foot">
-        <pre id="foot1" style=" font-family: 'Noto Sans', sans-serif;">
-            <h1 style="padding-left: 50px;">OUR INSTITUTIONS</h1>
+        <pre id="foot1" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <h3 style="padding-left: 50px;">OUR INSTITUTIONS</h3>
             EDUPORD GROUPS
             EDUPORD COLLEGE OF ARTS AND SCIENCE        
             EDUPORD COLLEGE OF EDUCATION
@@ -559,7 +565,7 @@
             EDUPORD B-SPINE - AN EXPERIENTIAL B SCHOOL
        </pre>
         <pre id="foot2">
-            <h1>DIFFERENTIATORS</h1>
+            <h3 style="text-align: center;">DIFFERENTIATORS</h3>
             Design Thinking in Education
             Differentiators
             5 Pillars of SNS
@@ -574,7 +580,12 @@
             Listed in $USD.
             
         </pre>
-        <img src="assets/icons8-whatsapp-30-removebg-preview.png" alt="f">
+        <div class="flogo">
+            <img src="assets/facebook.png" alt="facebook">
+            <img src="assets/github.png" alt="github">
+            <img src="assets/twitter.png" alt="twitter">
+            <img src="assets/whatsapp.png" alt="whatsapp">
+        </div>
     </footer>
 
 </body>
